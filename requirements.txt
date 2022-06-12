@@ -1,0 +1,6 @@
+gtts
+playsound
+pillow
+opencv-python
+pydub
+mutagen

@@ -1,0 +1,2 @@
+# SimpleAskRedditGen
+Simple Python program that generates by default 1024x600 videos of a random r/askreddit question and 5 answers. The code is really bad and unorganized so edit the code at your own risk. The program generates images with all the text instead of getting them straight from Reddit because I'm dumb and I don't know how to make website screenshots. You can change the target subreddit to anything though AskReddit is the most optimal one because the program doesn't support images.

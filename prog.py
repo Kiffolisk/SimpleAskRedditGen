@@ -129,7 +129,7 @@ def main():
     img.save('imgs/title.png')
     tts(post["title"])
     count = 0
-    if commentData != "No comments found":
+    if commentData != []:
         x = 0
         for comment in commentData:
             if x == MAX_AUDIOS:
@@ -155,6 +155,10 @@ def main():
             tts(txt.replace("\n", " "), "comments/com" + str(x) + ".mp3")
             x = x + 1
             count += 1
+    else:
+        print("No comments found, restarting program...")
+        main()
+        return
     if count < MAX_AUDIOS:
         print("Not enough comments found, restarting program...")
         main()
